@@ -1,0 +1,26 @@
+Comandos Git Dia 02
+
+git branch
+git branch nome-da-branch
+git checkout master(main)
+git marge nome-da-branch
+git branch -d nome-da-branch
+
+--------------------------
+
+git log
+git rm arquivo
+
+git log --dif-filter=D summary
+git checkout 4442~1  arquivo.txt
+
+git ignore
+
+git fetch
+git pull
+git push
+
+--------------------------
+
+git checkout -b nome-da-branch
+git commit -am "mensagem"

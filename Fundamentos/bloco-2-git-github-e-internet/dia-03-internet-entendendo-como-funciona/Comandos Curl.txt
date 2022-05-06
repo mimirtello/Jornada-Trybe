@@ -1,0 +1,5 @@
+Curl [options] [url]
+
+-u --user(usuario e senha)
+-t --upload -file(transfere arquivo)
+-s --silent(modo silencioso)

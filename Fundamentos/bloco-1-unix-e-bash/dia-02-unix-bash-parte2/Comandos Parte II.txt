@@ -1,0 +1,74 @@
+Comandos Parte II
+
+cat (recebe valores)
+ctrl + D (fecha o cat)
+
+cat > arquivo.txt (atribui valor para um arquivo)
+cat >> arquivo.txt (edita o arquivo)
+
+cat arquivo1.txt arquivo2.txt > tudo.txt (concatena os dois arquivos no ultimo)
+
+sort < arquivo.txt > arquivo-ordenado.txt
+
+who (quem esta utilizando o sistema)
+who | sort ( o output de who e enviado para sort)
+
+grep F nome.txt | sort ( ordena em ordem alfabetica e faz uma lista que contenha F)
+
+--------------------
+
+ls -less
+r - leitura
+w - escrita
+x - executa
+D - diretorio
+- - arquivo comum
+
+chmod 
+
+u - usuario
+g- grupo
+o - outros
+a - todos
+
+chomod u -rw (retira o r e o w)
+chomod u +rw (acrescenta o r o w)
+
+chomod 766 (arquivo ou diretorio)
+
+--------------------
+
+ps (processos)
+
+sleep 10&(deixa processo em background)
+
+ctrl + z (suspende)
+bg (volta para o background)
+
+jobs (processos executando e suspensos)
+
+fg (volta com o processo para frente)
+fg % 1
+
+ctrl + c (encerra o processo)
+kill % 1
+
+kill -9 numero do PID (forçado a encerrar)
+
+echo (exibe mensagem)
+echo " mesagem" > teste.txt
+
+history (exibe historico de comandos)
+history | tail
+
+find 
+name, date, size, type
+
+find ./teste -name "exemplo"
+
+r = 4
+w = 2
+x = 1
+
+chomos 777 (4 + 2 + 1)
+todas as permiissões

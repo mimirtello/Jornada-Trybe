@@ -1,0 +1,89 @@
+Comandos Parte I
+
+Video 02
+ls (lista todos arquivos e diretórios)
+/ (diretório raiz- root)
+ls -a (lista todos arquivos ocultos)
+cd (change directory - muda diretório)
+
+cd users
+cd mimi
+
+TAB ( atalho - autocompleta)
+
+clear (limpa a tela)
+mkdir (cria diretório)
+
+cd.
+cd .. (diretório pai)
+
+pwd (diretório completo)
+
+-----------------------
+
+Video 03
+
+cp (copia arquivo)
+cp arquivo.txt arquivo2.text
+
+cat (mostra conteúdo)
+cat arquivo.txt
+
+mv (move arquivo)
+mv arquivo.txt /users/mimi/teste
+
+rm (remove arquivo)
+rmdir (remove diretório)
+(só deleta se a pasta estiver vazia)
+rm -rf (remove diretório e arquivos)
+
+-----------------------
+
+Video 04
+
+less (mostra páginas do arquivo
+less arquivo.txt
+(barra de espaço) (passa página)
+(Q) finaliza 
+
+/palavra (pesquisa dentro de less)
+n (próxima)
+
+head (mostra os 10 primeiros)
+head arquivo.txt
+head -5 (mostra os 5 primeiros)
+
+tail (mostra os 10 ultimos)
+tail -5 (mostra os 5 ultimos)
+
+grep (pesquisa)
+grep palavra arquivo.txt
+
+grep -i (sem case sensitive)
+grep -i ‘a frase’ arquivo.txt (entre aspas pesquisa)
+grep -iv (valores que não sejam aquele digitado)
+grep -in (exibe numero da linha que tem a palavra)
+grep -ic(Quantidade de vezes que a palavra é exibida)
+
+wc (quantidade de linhas, palavras e caracteres)
+wc -w (palavras)
+wc -l (linhas)
+we -c (caracteres) 
+
+-----------------------
+
+Video 05
+
+ls * (mostra tudo)
+
+ls ?rybe (substitui carácter)
+
+man (manual)
+man ls
+
+whatis (explica o que é o comando)
+whatis cp
+
+apropos (digite o que quer fazer)
+apropos copy -> cp
+

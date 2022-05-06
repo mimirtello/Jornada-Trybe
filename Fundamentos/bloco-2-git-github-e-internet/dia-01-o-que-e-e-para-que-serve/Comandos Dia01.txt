@@ -1,0 +1,20 @@
+Comandos Git Dia01
+
+git init
+git status
+git add .
+git commit -m "Mensagem"
+git remote add origin ...
+git remote -v
+git push -u origin master
+
+
+--------------
+
+
+git config --global user.name "nome"
+git config --global user.email email@com.br
+git config --global core.editor "code --wait"
+code .gitconfig
+git --version
+git config --list
