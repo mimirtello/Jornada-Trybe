@@ -1,0 +1,150 @@
+*{
+    margin:0;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+nav li{
+    display:inline-block;
+    padding:30px;
+    font-weight:800;
+   
+}
+nav li:hover{
+    color:rgb(216, 57, 208);
+    font-weight: 800;
+}
+nav{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(20, 86, 139);
+}#primeiro{
+    background: url('http://4.bp.blogspot.com/-nCRuuIIK7Bk/VVUbUSNT16I/AAAAAAAAA8M/CP3mDt2s6Gk/s1600/uw-2010-06-11.jpg');
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 500px;
+}
+header{
+    color:beige;
+    font-size: 40px;
+}
+header h1{
+    position:absolute;
+    margin: 30px;
+    border-bottom: 3px solid beige;
+}
+header h2{
+    position:absolute;
+    margin: 30px;
+    margin-top:120px;
+    
+}
+#segundo {
+    background-color:beige;
+    height: 350px;
+    
+    
+}
+#segundo >p{
+    position:absolute;
+    margin:50px;
+    color:gray;
+}
+table{
+    position:absolute;
+    margin-top:180px;
+    margin-left:50px;
+    color:rgb(107, 107, 107);
+}
+#terceiro{
+    background-color: rgb(20, 86, 139);;
+}
+.descricao{
+    
+   color: beige;
+   padding:30px;
+}
+#imagem-descricao{
+    height: 600px;
+    float:left;
+    padding:30px;
+    margin-top:80px;
+    
+}
+#terceiro h2{
+    position: absolute;
+    color:beige;
+    font-size: 40px;
+    margin: 30px;
+    margin-left:20%
+}
+#quarto h2{
+    position: absolute;
+    color:beige;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 25%;
+    color:rgb(20, 86, 139);
+    
+}
+#quarto{
+    background-color: beige;
+    
+}
+#visao{
+    color:rgb(107, 107, 107);
+    padding:30px;
+    
+    display: inline-block;
+    margin-top: 40px;
+
+    
+    
+}
+#imagem-visao{
+    
+    margin-top:0;
+    width:600px;
+    float: right;
+    padding:20px;
+   
+}
+#referencias{
+   
+    color:beige;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 25%;
+    color:rgb(20, 86, 139);
+     
+}
+a{
+    text-decoration: none;
+    color:rgb(107, 107, 107);
+}
+a:hover{
+    text-decoration: none;
+    color:rgb(20, 86, 139);
+}
+aside{
+    color:beige;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 25%;
+    color:rgb(20, 86, 139);
+}
+h4{
+    color:rgb(20, 86, 139); 
+}
+footer{
+    
+    background-color: darkgray;
+    height: 200px;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    display: inline-block;
+    margin-top: 100px;
+    
+}
