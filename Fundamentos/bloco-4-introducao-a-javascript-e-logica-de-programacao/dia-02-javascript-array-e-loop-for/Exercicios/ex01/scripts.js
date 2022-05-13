@@ -42,13 +42,13 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 //Quinto Exercicio
-// let maior=0
-// for(let i=0;i<numbers.length;i++){
-//  if(numbers[i]> maior){
-//     maior=numbers[i]
-//  }
-// }
-// console.log(maior)
+let maior=numbers[0]
+for(let i=0;i<numbers.length;i++){
+ if(numbers[i]> maior){
+    maior=numbers[i]
+ }
+}
+console.log(maior)
 
 
 //Sexto Exercicio
@@ -110,13 +110,13 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //Exercicio 9
 
-let numeros=[]
+// let numeros=[]
 
-for(let i=0; i<=25;i++){
-    numeros.push(i)
-}
-for (let i=0;i<numeros.length;i++){
-  console.log(numeros[i]/2)
-}
+// for(let i=0; i<=25;i++){
+//     numeros.push(i)
+// }
+// for (let i=0;i<numeros.length;i++){
+//   console.log(numeros[i]/2)
+// }
 
 
