@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //Exercicio 01
+
+      let h1= document.createElement('h1')
+      h1.innerText="Exercício 5.2 - JavaScript DOM"
+      document.body.appendChild(h1)
+
+      //Exercicio 02
+
+      let main=document.createElement('main')
+      main.className="main-content"
+      document.body.appendChild(main)
+
+      //Exercicio 03
+
+      let section =document.createElement('section')
+      section.className="center-content"
+      main.appendChild(section)
+
+      //Exercicio 04
+
+      let p = document.createElement('p')
+      p.innerText = "Testando..."
+      section.appendChild(p)
+
+      //Exercicio 05
+
+      let sectionLeft = document.createElement('section')
+      sectionLeft.className="left-content" 
+      main.appendChild(sectionLeft)
+
+      //Exercicio 06
+      let sectionRight = document.createElement('section')
+      sectionRight.className="right-content" 
+      main.appendChild(sectionRight)
+
+      //Exercicio 07
+      let img = document.createElement('img')
+      img.className= "small-image"
+      img.src= "https://picsum.photos/200"
+      sectionLeft.appendChild(img)
+
+      //Exercicio 08
+      const ul = document.createElement('ul');
+      sectionRight.appendChild(ul);
+      const arrayNumeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+      for (let num in arrayNumeros) {
+        const li = document.createElement('li');
+        li.innerHTML = arrayNumeros[num];
+        ul.appendChild(li);
+      }
+
+      //Exercicio 09
+      for (let index = 1; index <= 3; index += 1) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = 'Show ' + index;
+        main.appendChild(h3);
+      }
+
+
+      // COLOQUE SEU CÓDIGO AQUI
+    </script>
+  </body>
+</html>
