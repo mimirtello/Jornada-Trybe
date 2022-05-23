@@ -145,7 +145,7 @@ function legendaCor(cor){
 
 legendaCor('green')
 
-//Eexrcicio 09 (gabarito)
+//Exercicio 09 (gabarito)
 
 function setTaskClass() {
   let selectedTask = document.getElementsByClassName('task selected');
