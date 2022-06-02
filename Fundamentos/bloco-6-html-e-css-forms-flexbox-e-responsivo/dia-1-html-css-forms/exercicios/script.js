@@ -55,7 +55,7 @@ function handleSubmit(event) {
   if (validation === true) {
     alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
   } else {
-    alert('Dados inválidos')
+    alert('Dados inválidos');
   }
 }
 
