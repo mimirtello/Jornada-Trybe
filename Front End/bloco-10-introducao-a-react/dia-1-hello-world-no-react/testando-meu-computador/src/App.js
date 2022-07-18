@@ -1,10 +1,13 @@
 import './App.css';
 import HelloWord from './HelloWord'
+import About from './About';
 
 function App() {
   return (
-  //  <span className="Hello">Hello, World!</span>
+  <div>
   <HelloWord></HelloWord>
+  <About></About>
+  </div>
   );
 }
 
