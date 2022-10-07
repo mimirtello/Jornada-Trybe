@@ -1,0 +1,36 @@
+Comandos dos Docker
+
+docker -v
+docker --help
+docker ps
+docker ls
+docker container ls
+
+docker run -it ubuntu bash
+
+exit
+
+docker create -it ubuntu bash
+docker start id(ou nome)
+
+docker attach id(ou nome)
+
+docker stop id(ou nome)
+docker restart id(ou nome)
+
+docker pause id(ou nome)
+docker unpause id(ou nome)
+
+docker rm id(ou nome)
+docker rm -f id(ou nome)
+
+docker container prune
+
+docker images
+docker rmi imagem
+
+-------------
+
+touch notes.txt
+echo 'ola' > notes.txt
+cat notes.txt
