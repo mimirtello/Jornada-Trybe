@@ -49,5 +49,5 @@ app.post('/teams', (req, res) => {
   
     res.status(200).end();
   });
-  
+
 module.exports = { app };
