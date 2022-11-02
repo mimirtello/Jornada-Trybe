@@ -1,4 +1,3 @@
-// middlewares/validateName.js
 module.exports = (req, res, next) => {
     const { name } = req.body;
     

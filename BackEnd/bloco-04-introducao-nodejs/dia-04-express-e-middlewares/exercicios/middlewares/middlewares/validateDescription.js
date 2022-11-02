@@ -1,4 +1,3 @@
-// middlewares/validateDescription.js
 const validateDescription = (descriptionValue, res, value) => {
     if (!descriptionValue) {
       return res.status(400).json(

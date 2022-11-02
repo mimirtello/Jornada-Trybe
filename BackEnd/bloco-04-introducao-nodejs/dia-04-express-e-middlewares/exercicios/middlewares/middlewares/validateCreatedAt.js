@@ -1,4 +1,3 @@
-// middlewares/validateCreatedAt.js
 module.exports = (req, res, next) => {
     const { createdAt } = req.body.description;
   

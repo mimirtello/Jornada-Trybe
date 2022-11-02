@@ -1,4 +1,3 @@
-// middlewares/validatePrice.js
 module.exports = (req, res, next) => {
     const { price } = req.body;
     

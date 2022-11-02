@@ -1,4 +1,3 @@
-// middlewares/validateDifficulty.js
 module.exports = (req, res, next) => {
     const { difficulty } = req.body.description;
     const classifications = ['Fácil', 'Médio', 'Difícil'];
