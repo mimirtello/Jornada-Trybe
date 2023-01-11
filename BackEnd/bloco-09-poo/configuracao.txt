@@ -1,0 +1,74 @@
+ npm init -y
+
+ npm install -D typescript @types/node ts-node-dev
+
+ npm install express && npm install -D @types/express
+
+ npm install sequelize dotenv && npm install -D @types/sequelize mysql2 sequelize-cli
+
+ npx tsc --init
+
+
+ ============================
+tsconfig.json
+
+  {
+  "compilerOptions": {
+    // ...
+    "rootDir": "./src",
+    "outDir": "./build",
+    // ...
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
+
+============================
+
+.sequelizerc
+
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve(__dirname,'build','database','config', 'database.js'),
+  'models-path': path.resolve(__dirname,'build','database','models'),
+  'seeders-path': path.resolve(__dirname,'src','database', 'seeders'),
+  'migrations-path': path.resolve(__dirname,'src','database', 'migrations'),
+};
+==========================
+
+./src/database/config/database.ts
+
+import 'dotenv/config';
+import { Options } from 'sequelize';
+
+const config: Options = {
+  username: process.env.DB_USER || 'root',
+  password: process.env.DB_PASS || '',
+  database: process.env.DB_NAME || 'books_api',
+  host: process.env.DB_HOST || 'localhost',
+  port: Number(process.env.DB_PORT) || 3306,
+  dialect: 'mysql',
+}
+
+export = config;
+
+======================
+package.json
+
+{
+// ...
+"scripts": {
+  // ...
+  "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+}
+// ...
+}
+
+=====================
+./src/database/models/index.ts
+
+import { Sequelize } from 'sequelize';
+import * as config from '../config/database';
+
+export default new Sequelize(config);
