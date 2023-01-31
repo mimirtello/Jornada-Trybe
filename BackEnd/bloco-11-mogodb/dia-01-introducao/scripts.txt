@@ -37,6 +37,7 @@ db.products.countDocuments({})
 ========================
 
 db.collection.find( { qty: { $gt: 4 } } )
+db.products.find( { price: { $gt: 10} } )
 
 db.collection.find(<query>).limit(<número>)
 db.bios.find().limit(5)
