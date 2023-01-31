@@ -1,0 +1,48 @@
+docker pull mongo:4
+
+docker run --name <nome-do-container> -d -p 27017:27017 mongo:4
+docker run --name testeMongoDB -d -p 27017:27017 mongo:4
+
+docker exec -it testeMongoDB  mongo
+
+docker cp nome-do-arquivo.json <nome-do-container-ou-id>:/tmp/nome-do-arquivo.json
+docker exec <nome-do-container-ou-id> mongoimport -d <nome-do-banco> -c <nome-da-coleção> --file /tmp/nome-do-arquivo.json
+
+ docker exec <nome-do-container-ou-id> mongoimport --collection='from_array_file' --file='one_big_list.json' --jsonArray
+
+ docker cp one_big_list.json testeMongoDB:/tmp/one_big_list.json
+ 
+ ===============================
+
+use nomeDoBanco
+db.nomeDaColecao.insertOne({ x: 1 })
+db.createCollection( "nomeDaColecao", { collation: { locale: "pt" } } );
+
+============================
+db.products.insertMany(
+[
+    { "productName": "Lapis", "stock": 10, "price": 20,"status":"A"},
+    { "productName": "Tesoura", "price": 5, "status": "B" },
+    { "productName": "Borracha", "price": 15, "status": "A" }
+]
+)
+
+db.product.find()
+db.products.insertOne()
+show dbs
+db.products.findOne({})
+
+db.products.countDocuments({})
+
+========================
+
+db.collection.find( { qty: { $gt: 4 } } )
+
+db.collection.find(<query>).limit(<número>)
+db.bios.find().limit(5)
+db.bios.find().limit(5).pretty()
+
+===========================
+
+db.bios.find().skip(2)
+db.bios.find().limit(10).skip(5)
