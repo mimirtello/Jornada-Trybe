@@ -1,0 +1,11 @@
+docker pull selenium/standalone-firefox:106.0
+
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size 2g --name firefox selenium/standalone-firefox:106.0
+
+docker restart firefox
+
+pip3 install selenium==4.6.0
+
+sudo mv geckodriver /usr/bin
+
+mv geckodriver .venv/bin/
